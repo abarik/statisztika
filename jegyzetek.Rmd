@@ -1,0 +1,41 @@
+---
+title: "<i class='fa fa-book' aria-hidden='true'></i> Jegyzetek"
+---
+
+Ezen az oldalon az általam készített R jegyzeteket, feladatgyűjteményeket és teszteket sorolom fel. 
+
+
+**Új R jegyzetek** (2020. január 1-től)
+
+* [Példák próbák végrehajtására <i class="fas fa-external-link-alt"></i>](https://abarik.github.io/stat1_kurzus/){target="_blank"}
+* Modern adatelemzés R-ben. Az első lépésektől az egy- és kétváltozós hipotézisvizsgálatokig
+* R alapok I. - Bioinformatikai példákkal
+* R alapok II. - Bioinformatikai példákkal
+
+**Régebbi R                                                          jegyzetek** (2020. január 1-je előtt)
+
+* [Bevezetés az R-be 2008-04-23 <i class="far fa-file-pdf"></i> ](http://psycho.unideb.hu/munkatarsak/abari_kalman/szamitastechnika_II/bevezetes_az_R_be_2008_04.pdf){target="_blank"}
+
+* [Gyakori R parancsok <i class="far fa-file-pdf"></i> ](http://psycho.unideb.hu/munkatarsak/abari_kalman/szamitastechnika_II/gyakori_r_parancsok.pdf){target="_blank"}
+
+* [Gyakori R parancsok - Részletes leírás példákkal <i class="fas fa-external-link-alt"></i>](http://psycho.unideb.hu/archivum/R/){target="_blank"}
+
+* [R kezdőlépések <i class="fas fa-external-link-alt"></i>](http://psycho.unideb.hu/archivum/R_kezdolepesek/pages/leiro_stat.html){target="_blank"}
+
+* [R sorok, Bevezetés az R-be <i class="far fa-file-alt"></i> ](http://psycho.unideb.hu/munkatarsak/abari_kalman/szamitastechnika_II/Bevezetes_az_R_be.txt){target="_blank"}
+
+* [Sablon állomány az adatelemzéshez v0.1 <i class="fas fa-external-link-alt"></i>](http://psycho.unideb.hu/archivum/sablon_az_adatelemzeshez.html){target="_blank"}
+
+* [Hipotézisvizsgálatok v0.6 <i class="fas fa-external-link-alt"></i>](http://psycho.unideb.hu/archivum/hipotezisvizsgalatok/){target="_blank"}
+
+* [Statisztikai eljárások kiválasztása ver1.0 <i class="fas fa-external-link-alt"></i>](http://psycho.unideb.hu/archivum/sv/index.html){target="_blank"}
+
+* [Bevezetés az R-be. VÁZLAT v0.1 <i class="fas fa-external-link-alt"></i>](http://psycho.unideb.hu/archivum/ber/){target="_blank"}
+
+* [Bevezetés az R-be 2.0 - Feladatgyűjtemény <i class="fas fa-external-link-alt"></i>](http://psycho.unideb.hu/archivum/ber2/){target="_blank"}
+
+* [R tesztek <i class="fas fa-external-link-alt"></i>](http://psycho.unideb.hu/archivum/R_tesztek.html){target="_blank"}
+
+* [R feladatok <i class="far fa-file-pdf"></i>](http://psycho.unideb.hu/munkatarsak/abari_kalman/szamitastechnika_II/R_peldak.pdf){target="_blank"}
+
+

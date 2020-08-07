@@ -1,1 +1,1 @@
-# statisztika
+# Statisztika kurzusaim és jegyzeteim

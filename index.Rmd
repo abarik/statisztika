@@ -1,0 +1,12 @@
+---
+title: "Üdvözlöm!"
+---
+
+A honlap célja a statisztika tanításával kapcsolatos források megosztása.
+
+A fenti menüből a következő opciókat választhatja:
+
+* **Kurzusok** - a statisztika kurzusaimmal összefüggő információk
+* **Jegyzetek** - R jegyzeteim listája
+* **Rólam** - itt néhány sort olvashat rólam
+

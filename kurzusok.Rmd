@@ -1,0 +1,28 @@
+---
+title: "<i class='fa fa-chalkboard-teacher' aria-hidden='true'></i> Kurzusok"
+---
+
+* **Számítástechnika 1.**
+    * [Hivatkozáskezelők <i class="fab fa-youtube"></i>](https://www.youtube.com/playlist?list=PLnmeQHnHYqv5jzYnu8i2Kh46Ti5g1bVCz){target="_blank"}
+    * [Hivatkozáskezelők <i class="far fa-file-pdf"></i>](files/hivatkozaskezelok.pdf){target="_blank"}
+* Számítástechnika és könyvtárismeret
+* Matematikai alapok
+* **Pszichológiai statisztika 1. (paraméteres eljárások)**
+    * [Példák próbák végrehajtására <i class="fas fa-external-link-alt"></i>](https://abarik.github.io/stat1_kurzus/){target="_blank"}
+
+
+* **Az összes kurzushoz**
+    * [R könyvek, tutoriálok, blogok, adatbázisok <i class="fas fa-external-link-alt"></i>](https://abarik.github.io/roforrasok/){target="_blank"}
+    * [R a gyakorlatban <i class="fab fa-youtube"></i>](https://www.youtube.com/playlist?list=PLnmeQHnHYqv6ENGrdTXiE9YJrvHuxH2C9){target="_blank"}
+    
+* **Ajánlott irodalom**
+    * Freedman, D., Pisani, R., és Roger, P. (2005). *Statisztika - Statisztikai módszerek a társadalomkutatásban.* TYPOTEX, Budapest.
+    * Hajtman B. (1968a). *Bevezetés a matematikai statisztikába pszichológusok számára.* Akadémiai Kiadó, Budapest.
+    * Hajtman B. (1968b). *Matematikai statisztika pszichológus szakos hallgatók részére.* Akadémiai Kiadó, Budapest.
+    * Reiczigel J., Harnos A. és Solymosi N. (2018). *Biostatisztika nem statisztikusoknak.* Pars Kft., Budapest.
+    * Vargha A. (1978). *Pszichológiai statisztikai gyakorlat I.* Tankönyvkiadó, Budapest.
+    * Vargha A. (1985). *Valószínűségszámítás pszichológus hallgatók számára.* Tankönyvkiadó, Budapest.
+    * Vargha A. (1989). *Pszichológiai statisztikai gyakorlat II.* Tankönyvkiadó, Budapest.
+    * Vargha A. (2015). *Matematikai statisztika pszichológiai, nyelvészeti és biológiai alkalmazásokkal.* Pólya Kiadó, Budapest.    
+
+

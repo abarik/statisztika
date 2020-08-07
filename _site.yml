@@ -1,0 +1,24 @@
+name: "abarik.github.io"
+navbar:
+  title: '<i class="fa fa-area-chart fa_custom"></i> Statisztika'
+  left:
+    - text: "Kezdőlap"
+      icon: fa-home
+      href: index.html
+    - text: "Kurzusok"
+      icon: fa-chalkboard-teacher
+      href: kurzusok.html
+    - text: "Jegyzetek"
+      href: jegyzetek.html
+      icon: fa-book
+    - text: "Rólam"
+      icon: fa-info-circle
+      href: about.html
+output_dir: "docs"
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    css: style.css
+    
+    

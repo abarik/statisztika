@@ -1,0 +1,8 @@
+---
+title: '<i class="fa fa-info-circle" aria-hidden="true"></i>Rólam'
+---
+
+Abari Kálmán vagyok, a Debreceni Egyetem Pszichológiai Intézetének adjunktusa.
+
+ 
+Kutatási területem a beszédfeldolgozás, a matematikai statisztika pszichológiai alkalmazásai, a tudásterek elmélete, a statisztikai gépi tanulás és mesterséges intelligencia. Több mint 10 éve veszek részt az R statisztikai programcsomag hazai oktatásában. Különös figyelmet fordítok arra, hogy az R lehetőségei ne csak az informatikai szakemberek számára legyenek hozzáférhetőek, hanem a bioinformatika és a pszichológia területéről érkezők is gördülékenyen tudják használni azt a saját munkájukban. Jelenleg egy gamifikált nyelvoktató tananyag fejlesztési munkálatait is irányítom, és kiemelt fontosságúnak tartom, hogy az osztálytermi munka a tanuló és a tanár számára is örömteli tevékenység legyen.
