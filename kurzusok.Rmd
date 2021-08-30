@@ -13,6 +13,7 @@ title: "<i class='fa fa-chalkboard-teacher' aria-hidden='true'></i> Kurzusok"
 
 * **Az összes kurzushoz**
     * [R könyvek, tutoriálok, blogok, adatbázisok <i class="fas fa-external-link-alt"></i>](https://abarik.github.io/roforrasok/){target="_blank"}
+    * [Statisztika könyvek - példa adatbázisok felhasználása <i class="fas fa-external-link-alt"></i>](https://abarik.github.io/statkonyvek/){target="_blank"}
     * [R a gyakorlatban <i class="fab fa-youtube"></i>](https://www.youtube.com/playlist?list=PLnmeQHnHYqv6ENGrdTXiE9YJrvHuxH2C9){target="_blank"}
     
 * **Ajánlott irodalom**
