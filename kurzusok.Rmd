@@ -17,10 +17,10 @@ title: "<i class='fa fa-chalkboard-teacher' aria-hidden='true'></i> Kurzusok"
     * [R a gyakorlatban <i class="fab fa-youtube"></i>](https://www.youtube.com/playlist?list=PLnmeQHnHYqv6ENGrdTXiE9YJrvHuxH2C9){target="_blank"}
     
 * **Ajánlott irodalom**
-    * Smith, Eliot R., Mackie, Diane M. és Claypool, Heather M. (2016). *Szociálpszichológia.* Budapest, ELTE Eötvös Kiadó. 2. fejezet. Kutatási kérdések felvetése és megválaszolása. 67-104. oldal
-    * Carver, Charles S. és Scheier, Michael F. (2011). *Személyiségpszichológia.* Budapest, Osiris Kiadó. 2. fejezet. A személyiségkutatás módszerei. 3. fejezet. A személyiség mérése. 41-71. oldal
-    * Atkinson, Richard C., Hilgard, Ernest, Smith, Edward E., Nolen-Hoeksema, Susan, Fredrickson, Barbara L. és Loftus, Geoffrey R. (2005). *Pszichológia.* Budapest, Osiris Kiadó. Kutatási módszerek a pszichológiában. 41-50. oldal. Statisztikai módszerek és mérés. 721-732. oldal
-    * Cole, Michael és Cole, Sheila R. (2006). *Fejlődéslélaktan.* Budapest, Osiris Kiadó. 40-56. oldal
+    * Smith, Eliot R., Mackie, Diane M. és Claypool, Heather M. (2016). *Szociálpszichológia.* Budapest, ELTE Eötvös Kiadó. `r emo::ji("flower")` 2. fejezet. Kutatási kérdések felvetése és megválaszolása. 67--104. oldal
+    * Carver, Charles S. és Scheier, Michael F. (2011). *Személyiségpszichológia.* Budapest, Osiris Kiadó. `r emo::ji("flower")` 2. fejezet. A személyiségkutatás módszerei. 3. fejezet. A személyiség mérése. 41--71. oldal
+    * Atkinson, Richard C., Hilgard, Ernest, Smith, Edward E., Nolen-Hoeksema, Susan, Fredrickson, Barbara L. és Loftus, Geoffrey R. (2005). *Pszichológia.* Budapest, Osiris Kiadó. `r emo::ji("flower")` Kutatási módszerek a pszichológiában. 41--50. oldal. Statisztikai módszerek és mérés. 721--732. oldal
+    * Cole, Michael és Cole, Sheila R. (2006). *Fejlődéslélaktan.* Budapest, Osiris Kiadó. `r emo::ji("flower")` A fejlődéslélektan tudománya. 40--56. oldal
     * Freedman, D., Pisani, R., és Roger, P. (2005). *Statisztika - Statisztikai módszerek a társadalomkutatásban.* TYPOTEX, Budapest.
     * Hajtman B. (1968a). *Bevezetés a matematikai statisztikába pszichológusok számára.* Akadémiai Kiadó, Budapest.
     * Hajtman B. (1968b). *Matematikai statisztika pszichológus szakos hallgatók részére.* Akadémiai Kiadó, Budapest.
@@ -29,5 +29,4 @@ title: "<i class='fa fa-chalkboard-teacher' aria-hidden='true'></i> Kurzusok"
     * Vargha A. (1985). *Valószínűségszámítás pszichológus hallgatók számára.* Tankönyvkiadó, Budapest.
     * Vargha A. (1989). *Pszichológiai statisztikai gyakorlat II.* Tankönyvkiadó, Budapest.
     * Vargha A. (2015). *Matematikai statisztika pszichológiai, nyelvészeti és biológiai alkalmazásokkal.* Pólya Kiadó, Budapest.    
-
 
