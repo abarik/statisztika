@@ -1,0 +1,84 @@
+---
+title: "A tárgy teljesítése"
+author: "Számtech.1.<br>Abari Kálmán"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## A Word dokumentum
+
+Követelmények a Word dokumentummal szemben:
+
+* A [Műhelymunkák készítése és értékelése](https://psycho.unideb.hu/elemek/muhelymunka_szakdolgozat/BA_muhelymunka_kovetelmenyek.pdf) dokumentumban megfogalmazott követelmények
+* Formázások: betű, bekezdés, szakasz, táblázat, kép
+* Tartalomjegyzék készítése
+* Megjegyzések, Változások követése
+* Hivatkozások készítése. A hivatkozások elkészítéséhez segítséget itt találunk: https://www.youtube.com/playlist?list=PLnmeQHnHYqv5jzYnu8i2Kh46Ti5g1bVCz
+
+
+
+## Excel munkafüzet
+
+Követelmények az Excel munkafüzettel szemben:
+
+* cellák kijelölése, bevitel cellákba, adattípusok
+* hivatkozás cellákra
+* cellák formázása, mértékegység cellákban
+* képletek és függvények
+* adatok szűrése, rendezése, keresése
+
+
+## PowerPoint diasor
+
+
+**Példa feladat:**
+
+Szerepeltessünk annyi szöveges információt és képet a bemutatón, amennyi a témakör önálló feldolgozását is lehetővé teszi.
+
+1. Állítsunk be egyforma hátteret a bemutató mindegyik diájára! Keressünk kifejező, frappáns címet és alcímet!
+1. A második diától kezdve tegyünk oldalszámozást a diák jobb alsó sarkába, valamint az
+élőláb a nevünket, az elérhetőségünket és az aktuális félévet is tartalmazza.
+1. A diasor kézi továbbítással legyen vetíthető. A diák jobbról beúszó áttűnéssel
+jelenjenek meg!
+1. Legalább egy dián a bekezdések lentről ússzanak be!
+1. Helyezzünk el legalább 5 diát a bemutatóban!
+
+## Kis R ZH-k
+
+A félév során 6 db kis ZH-t írunk, és a legjobb 5 eredménye alapján számoljuk az R jegyet.
+
+Az egyes kis R ZH-k tervezett témakörei:
+
+1. **Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa.**
+2. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. **Egyszerű típuskonverzió. Mutatók kiírása.**
+3. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. Egyszerű típuskonverzió. Mutatók kiírása. **Numerikus transzformáció. Szűrés. Rendezés.**
+4. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. Egyszerű típuskonverzió. Mutatók kiírása. Numerikus transzformáció. Szűrés. Rendezés. **Hisztogram, dobozdiagram, egydimenziós pontdiagram rajzolása.**
+5. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. Egyszerű típuskonverzió. Mutatók kiírása. Numerikus transzformáció. Szűrés. Rendezés. Hisztogram, dobozdiagram, egydimenziós pontdiagram rajzolása. **Oszlopdiagram rajzolása. Táblázatok rajzolása.**
+6. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. Egyszerű típuskonverzió. Mutatók kiírása. Numerikus transzformáció. Szűrés. Rendezés. Hisztogram, dobozdiagram, egydimenziós pontdiagram rajzolása. Oszlopdiagram rajzolása. Táblázatok rajzolása. **Képek mentése. Adatbázis mentése.**
+
+
+## Szorgalmi feladatok kisötösért
+
+1. Mutassunk be egy tetszőleges, szabadon elérhető adatbázist a következő [sablon](https://abarik.github.io/statkonyvek/adatb%C3%A1zis-p%C3%A9ld%C3%A1k-a-k%C3%B6nyvekb%C5%91l.html) alapján. Az email-ben (abari.kalman@@gmail.com címre) elküldött összecsomagolt projekt tartalmazza az adatbázist és annak leírását RMarkdown formában. A leírás kövesse a fenti sablont, vagyis tartalmazzon *Leírás*, *Változók*, *Hivatkozás* és *Kapcsolódó R sorok* részt. Adatbáziskokat például itt találunk: [Ingyenes könyvek](https://abarik.github.io/statkonyvek/ingyenes-k%C3%B6nyvek.html), [R erőforrások](https://abarik.github.io/roforrasok/).
+
+2. PowerPoint bemutató készítése és 15 perces előadás tartása az [ajánlott irodalom](https://abarik.github.io/statisztika/kurzusok.html) első 4 tételének valamelyikéből.
+
+
+
+
+
+
+
+
+
+
+

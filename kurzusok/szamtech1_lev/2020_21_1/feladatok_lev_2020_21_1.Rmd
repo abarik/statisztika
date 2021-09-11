@@ -1,0 +1,50 @@
+---
+title: "Beadandó feladatok"
+author: "LEV Számtech.1.<br>Abari Kálmán"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
+---
+
+
+## 1. Az R feladat
+
+1. Hozzunk létre egy *RStudio* projektet `Kis_Eva_szamtech1_2020_20_1` néven, és hozzunk létre benne egy `Kis_Eva_szamtech1_2020_20_1.Rmd` nevű RMarkdown állományt. A projektkönyvtárban hozzunk létre egy `adat` alkönyvtárat. (`Kis_Eva` helyett természetesen a saját nevünket használjuk mindenhol.)
+1. Keressünk egy online elérhető adatbázist. Válaszhatunk ebből a gyűjteményből is: https://abarik.github.io/roforrasok/. Válasszunk olyan adatbázist, amelynek lehet valamilyen pszichológiai vonatkozása, mert a következő, szövegszerkesztési feladat ezt feltételezi.
+1. Töltsük le a kiválasztott adatbázist, és mentsük le az `adat` könyvtárba. (Tipikusan CSV, TXT, XLSX, XLS vagy SAV formátumú  állományokat találunk online, de elképzelhető, hogy tömörítve vannak, így kicsomagolásra is szükség lehet.)
+1. Az egyedi, saját adatbázisunkkal kapcsolatban a következő tevékenységeket kell elvégezni:
+    a. olvassuk be az adatbázist (`read.table()`)
+    a. állapítsuk meg a sorok és oszlopok számát (`str()`, `dim()`)
+    a. a teljes adatbázisra vonatkozóan írassunk ki leíró statisztikai mutatókat (`psych` csomag `describe()` függvénnyel és a `DescTools` csomag `Desc()` függvénnyel is)
+    a. válasszunk az adatbázisból egy numerikus oszlopot, és arra külön is írassunk leíró statisztikai mutatókat a fenti függvényekkel
+    a. válasszunk az adatbázisból egy kategorikus oszlopot, és arra külön is írassunk gyakorisági táblázatot a `Desc()` függvénnyel
+    a. rajzoljunk két tetszőleges színes ábrát (például `hist()`, `boxplot()`, `plot()`, `stripchart()`, `barplot()`, `pie()`)
+    a. A fenti tevékenységeket elvégző R parancsokat mentsük el a `Kis_Eva_szamtech1_2020_20_1.Rmd` állományba, majd fordítsuk le HTML és Word formátumba.
+
+> Szorgalmi feladat: A fenti műveleteket végezzük el a **jamovi** statisztikai programcsomaggal is.
+
+## 2. A Word feladat
+
+Készítsünk egy 8000 leütésnél (szóközzel együtt) nem hosszabb Word dokumentumot, amely tartalmazza:
+
+1. az előző feladatban megtalált adatbázis nevét és pontos forrását, valamint az adatbázis gyűjtésének és/vagy felhasználásának és/vagy céljának rövid leírását.
+1. az adatbázis összes oszlopának (de maximum 10-nek) a magyarázatát (rövid leírás, típus, lehetséges értékek)
+1. egy bekezdésben (4-10 sor) az adatbázis témaköréhez kapcsolódó pszichológia terület bemutatása, amelyben legalább 3 szakirodalomra történjen hivatkozás (legalább 1 könyv és 1 folyóiratcikk legyen a hivatkozások között). 
+
+A hivatkozások elkészítéséhez segítséget itt találunk: https://www.youtube.com/playlist?list=PLnmeQHnHYqv5jzYnu8i2Kh46Ti5g1bVCz
+
+A fenti követelményeknek megfelelő Word dokumentumot mentsük el `Kis_Eva_dokumentum.docx` néven a korábban létrehozott `Kis_Eva_szamtech1_2020_20_1` *RStudio* projektkonyvtárba!
+
+## 3. Beadandó feladat elküldése
+
+Csomagoljuk össze a `Kis_Eva_szamtech1_2020_20_1` *RStudio* projektkönyvtárunkat, és küldjük el az `abari.kalman@gmail.com` címre. A küldendő `Kis_Eva_szamtech1_2020_20_1.zip` állomány tartalma a fentiek alapján tehát:
+
+* `adat` könyvtár a letöltött adatbázissal
+* `Kis_Eva_szamtech1_2020_20_1.Rproj` az *RStudio* projektállománya
+* `Kis_Eva_szamtech1_2020_20_1.Rmd` az R feladat megoldása (RMD)
+* `Kis_Eva_szamtech1_2020_20_1.docx` az R feladat megoldása fordítás után (Word docx)
+* `Kis_Eva_szamtech1_2020_20_1.html` az R feladat megoldása fordítás után (HTML)
+* `Kis_Eva_dokumentum.docx` a Word feladat megoldása
+
