@@ -8,11 +8,11 @@ Ezen az oldalon az általam készített R jegyzeteket, feladatgyűjteményeket �
 **Új R jegyzetek** (2020. január 1-től)
 
 * [Példák próbák végrehajtására <i class="fas fa-external-link-alt"></i>](https://abarik.github.io/stat1_kurzus/){target="_blank"}
-* Modern adatelemzés R-ben. Az első lépésektől az egy- és kétváltozós hipotézisvizsgálatokig
-* R alapok I. - Bioinformatikai példákkal
-* R alapok II. - Bioinformatikai példákkal
+* Adatkezelés és egyváltozós elemzés R-ben
+* [Basic R](https://abarik.github.io/basicr_2020_21_2/)
+* [Advanced R](https://abarik.github.io/advancedr_2021_22_1/)
 
-**Régebbi R                                                          jegyzetek** (2020. január 1-je előtt)
+**Régebbi R jegyzetek** (2020. január 1-je előtt)
 
 * [Bevezetés az R-be 2008-04-23 <i class="far fa-file-pdf"></i> ](http://psycho.unideb.hu/munkatarsak/abari_kalman/szamitastechnika_II/bevezetes_az_R_be_2008_04.pdf){target="_blank"}
 

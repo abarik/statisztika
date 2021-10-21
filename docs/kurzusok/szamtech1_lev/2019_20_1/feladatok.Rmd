@@ -1,0 +1,87 @@
+---
+title: "Beadandó feladatok"
+author: "Számtech.1.<br>Abari Kálmán"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
+---
+
+
+## 1. R feladat
+
+
+A következő weboldalak valamelyikéről választanunk kell egy adatbázist:
+
+* https://vincentarelbundock.github.io/Rdatasets/datasets.html
+* https://www.kaggle.com/datasets
+* https://data.fivethirtyeight.com/
+
+Töltsük le a kiválasztott adatbázist. Ezek tipikusan CSV vagy TXT formátumú tagolt szöveges állományok, de elképzelhető, hogy tömörítve vannak, így kicsomagolásra is szükség lehet.
+
+
+A választott adatbázist írjuk be a következő [online táblázatba](https://docs.google.com/spreadsheets/d/13wC1nHYY0iPwPdMtUJrgP8LqbiJZyTxCmMT3yD4O9ng/edit?usp=sharing), és ellenőrizzük, hogy korábban más nem választotta ezt az adatbázist, ugyanis mindenkinek különböző adatbázist kell választania.
+
+Az egyedi, saját adatbázisunkkal kapcsolatban a következő tevékenységeket kell elvégezni:
+
+1. olvassuk be az adatbázist (`read.table()`)
+1. állapítsuk meg a sorok és oszlopok számát (`str()`, `dim()`)
+1. a teljes adatbázisra vonatkozóan írassunk ki leíró statisztikai mutatókat (`psych` csomag `describe()` függvénnyel és a `DescTools` csomag `Desc()` függvénnyel is)
+1. válasszunk az adatbázisból egy numerikus oszlopot, és arra külön is írassunk leíró statisztikai mutatókat a fenti függvényekkel
+1. válasszunk az adatbázisból egy kategorikus oszlopot, és arra külön is írassunk gyakorisági táblázatot a `Desc()` függvénnyel
+1. rajzoljunk két tetszőleges színes ábrát (például `hist()`, `boxplot()`, `plot()`, `stripchart()`, `barplot()`, `pie()`)
+
+A fenti tevékenységeket elvégző R parancsokat mentsük el egy `NEV_R_feladat.R` szkriptállományba.
+
+> Szorgalmi feladat: A fenti műveleteket végezzük el a **jamovi** statisztikai programcsomaggal is.
+
+##  2. Prezentációs feladat
+
+A fenti R feladat alapján készítsünk bemutatót. Képzeljük el, hogy egy 10 perces előadás formájában ismertetjük az R feladatot és bemutatjuk a megoldást jelentő R parancsokat.
+
+Szerepeltessünk annyi szöveges információt és képet a bemutatón, ami az R feladat megoldásának önálló feldolgozását is lehetővé teszi.
+
+1. Állítsunk be egyforma hátteret a bemutató mindegyik diájára! Az R feladat alapján keressünk kifejező, frappáns címet és alcímet!
+1. A második diától kezdve tegyünk oldalszámozást a diák jobb alsó sarkába, valamint az
+élőláb a nevünket, az elérhetőségünket és az aktuális félévet is tartalmazza.
+1. A diasor kézi továbbítással legyen vetíthető. A diák jobbról beúszó áttűnéssel
+jelenjenek meg!
+1. Legalább egy dián a bekezdések lentről ússzanak be!
+1. Helyezzünk el legalább annyi diát a bemutatóban, ahány kérdés szerepel az R
+feladatban!
+1. Az R feladatban létrehozott képek a bemutatóban is jelenjenek meg!
+1. A diákon megjelenő R parancsok és outputjaik Courier New vagy Consolas betűtípusban jelenjenek
+meg. 
+
+A fent felsorolt lépéseknek megfelelően készítsük el a bemutatónkat, majd mentsük el `NEV_bemutato.pptx` néven!
+
+
+## 3. Excel feladat
+
+Az R feladatban választott adatbázisból, hozzunk létre egy Excel munkafüzetet (`Adatok / Szövegből` menüpont), és mentsük el `NEV_tablazat.xlsx` néven!
+
+* formázzuk meg táblázatot, legyen tetszetős a kinézete
+* végezzünk el egy tetszőleges szűrést a táblázat alá.
+
+
+## 4. Word feladat
+
+
+Készítsünk egy kb. 8000 leütéses (szóközzel együtt) Word dokumentumot, amely formailag megfelel a [BA műhelymunka](http://psycho.unideb.hu/elemek/muhelymunka_szakdolgozat/BA_muhelymunka_kovetelmenyek.pdf) követelményeknek (az első három oldal: címlap, nyilatkozat, tartalomjegyzék). Legalább 5 szakirodalomra történjen hivatkozás (legalább 1 könyv és 1 folyóiratcikk legyen az 5 hivatkozás között). 
+
+A hivatkozások elkészítéséhez segítséget itt találunk: https://www.youtube.com/playlist?list=PLnmeQHnHYqv5jzYnu8i2Kh46Ti5g1bVCz
+
+
+A dokumentum tartalma az R feladatban szereplő adatbázishoz kapcsolódjon, de választhatunk tetszőleges pszichológiai témát is. Például kiindulhatunk valamely írásból a következő helyekről:
+
+* https://akademiai.com/loi/0016
+* http://ap.elte.hu/a-folyoirat/
+* https://mindsetpszichologia.hu
+* http://mipszi.hu/
+* http://extra.hvg.hu/kategoria/pszichologia
+
+
+
+A fenti követelményeknek megfelelő Word dokumentumot mentsük el `NEV_dokumentum.docx` néven!
+

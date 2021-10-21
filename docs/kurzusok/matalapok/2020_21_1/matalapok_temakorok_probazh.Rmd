@@ -1,0 +1,252 @@
+---
+title: "Tematika és próbafeladatok"
+author: "Matalapok<br>Abari Kálmán"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## 1. témakör 
+
+* statisztika fogalma, ágai
+* populáció és minta fogalma
+* adatminta és változó fogalma
+* mérés, mérési skálák
+* diszkrét és folytonos változók
+* a mintabeli eloszlás fogalma
+* leíró statisztika
+    * gyakorisági eloszlás (kategorikus, nem csoportosított, csoportosított), abszolút, relatív, százalékos, kumulatív
+    * oszlopdiagram, pontdiagram, hisztogram
+    * középértékek: átlag, medián, módusz
+    * szóródási mutatók: terjedelem, IQR, kvantilisek, középeltérés, MAD, szórás, variancia, relatív szórás
+    * alakmutatók: ferdeség és csúcsosság
+
+## 2. témakör
+
+* valószínűség-számítás, alapfogalmak, eseményalgebra
+* valószínűség fogalma, valószínűségi mező, klasszikus valószínűségi mező
+* feltételes valószínűség fogalma
+* teljes valószínűség tétele, Bayes tétele
+* események függetlensége
+* valószínűségi változók fogalma, folytonos és diszkrét
+* valószínűségi változó eloszlása
+* várható érték, szórás és variancia
+* eloszlásfüggvény és sűrűségfüggvény
+* nevezetes eloszlások: normális, binomiális
+* központi határeloszlás tétel
+
+## 3. témakör
+
+* induktív statisztika részei
+* becsléselmélet (pont- és intervallumbecslés a várható értékre és szórásra)
+* hipotézisvizsgálat fogalma, lépései
+* az első- és másodfajú hiba 
+* a p-érték fogalma
+* egymintás u-próba
+* egymintás t-próba
+
+
+## Feladatok az 1. témakörhöz (a megoldás dőlten szedve)
+
+1. Határozza meg a következő statisztikai változók skálatípusát: 
+
+    *	hajszín: *nominális*
+    *	iskolai végzettség: *ordinális*
+    *	IQ: *intervallum*
+    *	testmagasság cm-ben mérve: *arány*
+    *	testmagasság m-ben mérve: *arány*
+    *	hőmérséklet Celsius fokban mérve: *intervallum*
+    *	hőmérséklet Kelvinben mérve: *arány*
+    *	családi állapot: *nominális*.
+
+1. Milyen ábrákat javasolna az előző feladatban szereplő változók eloszlásának szemléltetésére. *Nominális, ordinális: oszlopdiagram; intervallum, arány: hisztrogram vagy pontdiagram*.
+
+1. Milyen esetben használjuk a `cut()` függvényt az R-ben. Adjon rá egy példát!
+*Például numerikus változók értékeinek csoportosítására. Testmagasságok csoportosítása.*
+
+1. Tekintsük a következő mintát:
+
+```
+girl girl boy boy boy girl girl boy boy boy boy boy girl girl boy
+girl girl boy boy boy boy girl girl girl girl boy boy boy girl boy
+girl boy boy boy boy boy girl boy boy boy boy girl girl girl
+```
+
+    a. Készítsünk gyakorisági táblázatot, százalékos gyakorisági táblázatot, és kummulált százalékos gyakorisági táblázatot! Írjuk le az R parancso(ka)t is!
+
+```{r}
+x <- factor(c("girl","girl","boy", "boy", "boy", "girl","girl","boy", "boy",
+"boy", "boy", "boy", "girl","girl","boy","girl","girl","boy", "boy", "boy",
+"boy", "girl","girl","girl","girl","boy", "boy", "boy", "girl","boy",
+"girl","boy", "boy", "boy", "boy", "boy", "girl","boy", "boy", "boy", "boy",
+"girl","girl","girl"))
+table(x)
+prop.table(table(x))
+cumsum(prop.table(table(x)))
+```
+
+
+    b. Rajzoljuk meg a gyakorisági táblázathoz tartozó oszlopdiagram vázlatát (kézzel, hozzávetőleg)! Írjuk le az R parancso(ka)t is!
+    
+```{r}
+barplot(table(x))
+```
+
+
+
+## Feladatok a 2. témakörhöz (a megoldás dőlten szedve, vagy külön jelezve)
+
+1. 15 db villanykörtéből, amelyek között 5 hibás található, 3-at választunk ki találomra. Mi a valószínűsége, hogy 
+    a. egyik sem hibás    
+    *Összes eset: R: `choose(15,3)`; Kedvező eset: `choose(10,3)`  $P_a=120/455=0,26$*   
+    b. pontosan egy hibás   
+    *Kedvező eset: $5\times\binom{10}{2}=225. P_b=225/455=0,49$*
+    c. legalább egy hibás   
+    *$P_c=1-P_a=0,74$*
+
+
+1. A dohányosok (a felnőtt lakosság 40 %-a) az esetek 70 százalékában rendszeres feketekávézók is egyben, míg a nem dohányzóknak csak a 30 százaléka teszi ugyanezt. Ha kiválasztunk véletlenszerűen egy felnőttet, akkor mi a valószínűsége, hogy az illető rendszeres feketekávézó? Tegyük fel, hogy a kiválasztott személy rendszeres kávézó! Mi a valószínűsége, hogy egyben dohányos is?    
+*D – a véletlenül választott személy dohányos*   
+*ND – a véletlenül választott személy nem dohányos*   
+*K – a véletlenül választott személy feketekávézó*   
+*P(D)=0,4, P(ND)=0,6, P(K|D)=0,7, P(K|ND)=0,3*   
+*P(K)=?, P(D|K)=?*   
+*P(K)=P(D)P(K|D)+P(ND)P(K|ND)=0,4x0.7 + 0,6x0,3 = 0,46*   
+*P(D|K)=P(DK)/P(K)=(P(K|D)P(D))/P(K)=0,7x0,4/0,46=0,608*
+1. Legyen 100 elemű minták esetén az $X$ átlagának szórása 3! Mennyi $X$ szórása? *30*
+1. Legyen $X$ standard normális eloszlású valószínűségi változó. Határozzuk meg a következő valószínűségeket:
+    a. $P(-0.73 < X < 0)$   
+    *Megoldás kézi számolással, táblázatból: $F(0)-F(-0,73)=0,5–(1-F(0,73))=0,5-1+0,7673=0,2673$*   
+    *Megoldás R-ben: `pnorm(0, mean=0, sd=1) - pnorm(-0.73, mean=0, sd=1)`*
+    b. $P(-2 < X )$   
+    *Megoldás kézi számolással, táblázatból: $P(X<2)=F(2)=0,9772*   
+    *Megoldás R-ben: `pnorm(2, mean=0, sd=1)`*
+    
+1. Tegyük fel, hogy a Többváltozós statisztika kurzus vizsgaeredményei normális eloszlásúak, 85 pont várható értékkel és 15 pont szórással. Mi a valószínűsége, hogy egy véletlenül kiválasztott dolgozat
+    a. 78 pontnál jobb
+    *Megoldás kézi számolással, táblázatból: $P(X>78)=P(Z>(78-85)/15)=P(Z>-0,4666)= P(Z<0,4666) =F(0,4666) = 0,6796$*   
+    *Megoldás R-ben: `1-pnorm(78, mean=85, sd=15)`*
+    b. 75 és 85 pont közé esik   
+    *Megoldás kézi számolással, táblázatból: $P(75<X<85)=P((75-85)/15<Z<(85-85)/15)= P(-0,6666<Z<0)=F(0)-F(-0,6666)=F(0)-(1-F(0,6666))= 0,2475$*   
+    *Megoldás R-ben: `pnorm(85, mean=85, sd=15)-pnorm(75, mean=85, sd=15)`*
+
+
+1. Az A csapat 2/3-os valószínűséggel nyer, ha játszik. Ha az A csapat 4 játékot játszik, akkor mennyi a valószínűsége, hogy 
+    a. pontosan 2 játékot nyer   
+    *Megoldás R-ben: `dbinom(2, p=2/3, size=4)`*
+    b. legalább egyet nyer   
+    *Megoldás R-ben: `1-dbinom(0, p=2/3, size=4)`*
+
+1. Valamely $Y$-nal jelölt valószínűségi változónak 4 különböző értéke lehetséges: -1, 1, 2, 3, s ezek rendre a következő valószínűséggel fordulnak elő: $P(-1)=0,4; P(1)=0,1; P(2)=0,1$. 
+    a. Határozzuk meg a hiányzó $P(3)$ valószínűséget.   
+    *Megoldás: $P(3)=1-(P(-1)+P(1)+P(2))=0,4$*
+    b. Határozzuk meg az $Y$ változó várható értékét és szórását!   
+    $M(Y)=0,4\times(-1)+0,1\times1+0,1\times2+0,4\times3=1,1$   
+    $D^2(Y)=((-1-1,1)\times2+(1-1,1)\times2+(2-1,1)\times2+(3-1,1)\times2)/4=2,21$    
+    $D(Y)=1,486$
+    c. A valószínűségi változó eloszlását ábrázoljuk vonaldiagramon!
+    d. Rajzoljuk meg az $Y$ eloszlásfüggvényét is!
+
+
+## Feladatok a 3. témakörhöz (a megoldás dőlten szedve, vagy külön jelezve)
+
+1. A következő R output alapján válaszoljunk a kérdésekre:
+
+```{r echo=FALSE}
+t.test(x = c(12, 11, 14, 8, 14, 12, 8, 7, 9, 11, 12), mu = 10)
+```
+
+a. Melyik R függvényt használtuk a parancssorban? *`t.test()`*
+b. Mi a nullhipotézise a fenti próbának? *H0: M(X)=10*
+c. Mennyi a mintaelemszám? *n=11*
+d. Szignifikáns a próba? *nem*
+e. Mennyi a mintaátlag? *10.73*
+f. Határozzuk meg a p értéket R paranccsal is. *`2*(1-pt(q=1, df=10))`*
+
+2. Családok egy csoportjában vizsgálták az egy főre jutó havi nettó jövedelem értékét.
+Egy 5 elemű minta adatai a következőek (ezer Ft-ban): 20, 21, 23, 25, 26. Készítsünk
+pontbecslést a várható értékre és a varianciára. *(23; 6,5)*
+
+```{r}
+x <- c(20, 21, 23, 25, 26)   # minta rögzítése
+mean(x)                      # mintaátlag
+sd(x)                        # minta szórása
+var(x)                       # minta varianciája
+```
+
+
+3. Családok egy csoportjában vizsgálták az egy főre jutó havi nettó jövedelem értékét.
+Egy 5 elemű minta adatai a következőek (ezer Ft-ban): 20, 21, 23, 25, 26. Készítsünk
+95 %-os megbízhatóságú intervallum becslést a várható értékre, ha a populációbeli
+szórás 7. Határozzuk meg úgy is a 95 %-os megbízhatóságú intervallum határait, hogy a populációbeli szórás nem ismert.  *(16,86; 29,14)*
+
+```{r}
+## Ismert szórás ----------------------------
+# a minta
+x <- c(20, 21, 23, 25, 26)
+
+atlag.x <- mean(x) # átlag
+alfa <- 0.05       # alfa
+se.x <- qnorm(1-alfa/2)*7/sqrt(length(x)) # standard hiba
+
+# az intervallum alsó határa
+atlag.x-se.x  
+# az intervallum felső határa  
+atlag.x+se.x    
+
+
+## Ismeretlen szórás ----------------------------
+# a minta
+x <- c(20, 21, 23, 25, 26)
+t.test(x)
+
+atlag.x <- mean(x) # átlag
+alfa <- 0.05       # alfa
+s.x <- qt(p = 1-alfa/2, df = 4)*sd(x)/sqrt(length(x)) 
+
+# az intervallum alsó határa
+atlag.x-s.x  
+# az intervallum felső határa  
+atlag.x+s.x    
+```
+
+
+4. Azt állítjuk, hogy a négyfős családok átlagos költsége a baseball meccseken nem
+egyenlő 172 dollárral. Egy 22 elemű véletlen minta mintaátlaga 189,34 dollár lett. A
+minta szórása 33,65 dollár. Tegyük fel, hogy a változó normális eloszlású a populációban.
+Válaszoljuk meg, hogy az állításunk igaz vagy sem 10%-os szignifikancia szinten?   
+*$H_0:\mu=172$, t-próba, df=22-1=21, $\alpha$=0,10, $tkrit=\pm1,721$, t=2,42, mivel 2,42 nagyobb mint 1,721 ezért a $H_0$-t visszautasítjuk, azaz az állítást elfogadjuk.*
+
+```{r}
+mu <- 172          # nullhipotézisben szereplő konstans
+n <- 22            # mintelemszám
+atlag.x <- 189.34  # átlag
+szoras.x <- 33.65  # minta szórása
+alfa <- 0.1        # alfa
+
+t.x <- (atlag.x-mu)/(szoras.x/sqrt(n)) # próbastatisztika értéke
+t.x
+
+# 1. megoldás: hagyományos, a megtartási tartomány határaival
+qt(p = alfa/2, df = n-1)   # alsó határ
+qt(p = 1-alfa/2, df = n-1) # felső határ
+
+# Mivel t.x nem esik a megtartási tartományba, ezért H1.
+
+# 2. megoldás: p-érték alapján (kétoldali próbával)
+(1-pt(q = t.x, df = n-1))*2
+
+# Mivel p-érték kisebb, mint alfa, ezért H1.
+```
+
+
+

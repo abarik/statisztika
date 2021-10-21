@@ -1,0 +1,84 @@
+---
+title: "A tárgy teljesítése"
+author: "Számtech.1.<br>Abari Kálmán"
+date: "`r Sys.Date()`"
+output:
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## A kiselőadás
+
+Keressünk egy online elérhető adatbázist. Válaszhatunk ebből a gyűjteményből is: https://abarik.github.io/roforrasok/. Válasszunk olyan adatbázist, amelynek lehet valamilyen pszichológiai vonatkozása.
+
+A talált adatbázis alapján készítsünk önállóan egy Word dokumentumot, egy Excel munkafüzetet és egy PowerPoint diasort, és egy maximum 15 perces előadásban mutassuk be. Két fő közösen tart előadást, mindhárom témakörben mindkét előadó szerepel. 
+
+### A Word dokumentum
+
+Követelmények a Word dokumentummal szemben:
+
+* feleljen meg a [BA műhelymunka követelmények](http://psycho.unideb.hu/elemek/muhelymunka_szakdolgozat/BA_muhelymunka_kovetelmenyek.pdf) leírásban szereplő, közepes terjedelmű műhelymunkákra vonatkozó formai követelményeknek
+* legyen *Címoldal*, *Nyilatkozat*, *Tartalomjegyzék* és 1-3 további saját oldal. A saját oldalak tartalmazzanak címeket (minimálisan *Címsor 1* és *Címsor 2* stílussal formázva), és több bekezdésnyi szöveget (egy új *bekezdes* nevű stílussal formázva)
+* a saját oldalak tartalma:
+    * megtalált adatbázis neve és pontos forrása, valamint az adatbázis gyűjtésének és/vagy felhasználásának és/vagy céljának rövid leírása
+    * az adatbázis összes oszlopának (de maximum 10-nek) a magyarázata (rövid leírás, típus, lehetséges értékek)
+    * az adatbázis témaköréhez kapcsolódó pszichológia terület bemutatása, amelyben legalább 3 szakirodalomra történjen hivatkozás (legalább 1 könyv és 1 folyóiratcikk legyen a hivatkozások között). 
+
+A hivatkozások elkészítéséhez segítséget itt találunk: https://www.youtube.com/playlist?list=PLnmeQHnHYqv5jzYnu8i2Kh46Ti5g1bVCz
+
+
+### Excel munkafüzet
+
+Követelmények az Excel munkafüzettel szemben:
+
+* az első munkalap tartalmazza a megtalált adatbázist
+* végezzünk el egy tetszőleges szűrést a második munkalapra az első munkalap adatbázisa alapján
+* formázzuk meg a szűrt táblázatot, legyen tetszetős a kinézete.
+
+
+
+### PowerPoint diasor
+
+Az adatbázis alapján készítsünk bemutatót, amely a Word dokumentum témaköreit mutatja be:
+
+* adatbázis neve és pontos forrása, valamint az adatbázis gyűjtésének és/vagy felhasználásának és/vagy céljának rövid leírása
+* az adatbázis összes oszlopának magyarázata
+* az adatbázis témaköréhez kapcsolódó pszichológia terület bemutatása
+
+Szerepeltessünk annyi szöveges információt és képet a bemutatón, amennyi a témakör önálló feldolgozását is lehetővé teszi.
+
+1. Állítsunk be egyforma hátteret a bemutató mindegyik diájára! Keressünk kifejező, frappáns címet és alcímet!
+1. A második diától kezdve tegyünk oldalszámozást a diák jobb alsó sarkába, valamint az
+élőláb a nevünket, az elérhetőségünket és az aktuális félévet is tartalmazza.
+1. A diasor kézi továbbítással legyen vetíthető. A diák jobbról beúszó áttűnéssel
+jelenjenek meg!
+1. Legalább egy dián a bekezdések lentről ússzanak be!
+1. Helyezzünk el legalább 5 diát a bemutatóban!
+
+
+
+## Kis R ZH-k
+
+A félév során 6 db kis ZH-t írunk, és a legjobb 5 eredménye alapján számoljuk az R jegyet.
+
+Az egyes kis R ZH-k tervezett témakörei:
+
+1. **Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa.**
+2. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. **Egyszerű típuskonverzió. Mutatók kiírása.**
+3. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. Egyszerű típuskonverzió. Mutatók kiírása. **Numerikus transzformáció. Szűrés. Rendezés.**
+4. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. Egyszerű típuskonverzió. Mutatók kiírása. Numerikus transzformáció. Szűrés. Rendezés. **Hisztogram, dobozdiagram, egydimenziós pontdiagram rajzolása.**
+5. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. Egyszerű típuskonverzió. Mutatók kiírása. Numerikus transzformáció. Szűrés. Rendezés. Hisztogram, dobozdiagram, egydimenziós pontdiagram rajzolása. **Oszlopdiagram rajzolása. Táblázatok rajzolása.**
+6. Tagolt szöveges állomány és Excel állomány beolvasása. Sorok és oszlopok száma, oszlopok típusa. Egyszerű típuskonverzió. Mutatók kiírása. Numerikus transzformáció. Szűrés. Rendezés. Hisztogram, dobozdiagram, egydimenziós pontdiagram rajzolása. Oszlopdiagram rajzolása. Táblázatok rajzolása. **Képek mentése. Adatbázis mentése.**
+
+
+
+
+
+
+

@@ -1,0 +1,60 @@
+---
+title: "Házi feladat - Számtech 1."
+author: "Abari Kálmán"
+date: "2020. 09. 13."
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Beolvasás 
+
+```{r}
+metacritic <- read.table(file = "adat/metacritic_games.csv", sep=",", dec=".", header = T, comment.char = "", quote = "\"")
+```
+
+
+# Sorok és oszlopok száma
+
+```{r}
+str(metacritic)
+dim(metacritic)
+```
+
+# Statisztikai mutatók kiírása az adatbázisra
+
+```{r}
+# install.packages("psych")
+# install.packages("DescTools")
+library(psych)
+library(DescTools)
+options(scipen = 8)
+describe(metacritic)
+Desc(metacritic)
+```
+
+# Egy numerikus oszlopot
+
+```{r}
+describe(metacritic$user_score)
+Desc(metacritic$user_score)
+```
+
+# Egy kategorikus oszlop
+
+```{r}
+Desc(metacritic$platform)
+```
+
+# Két színes ábra
+
+```{r}
+hist(metacritic$user_score, col=rainbow(30))
+boxplot(user_score~metacritic$platform, data=metacritic, col=topo.colors(7))
+```
+
