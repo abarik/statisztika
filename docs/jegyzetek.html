@@ -13,7 +13,7 @@
 
 <title> Jegyzetek</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -59,6 +59,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="style.css" type="text/css" />
 
 
@@ -83,6 +84,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -235,7 +239,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -292,6 +296,7 @@ $(document).ready(function () {
 <p>Ezen az oldalon az általam készített R jegyzeteket, feladatgyűjteményeket és teszteket sorolom fel.</p>
 <p><strong>Új R jegyzetek</strong> (2020. január 1-től)</p>
 <ul>
+<li><a href="https://abarik.github.io/tsjr/" target="_blank">Többváltozós statisztika jamovi-ban és R-ben <i class="fas fa-external-link-alt"></i></a></li>
 <li><a href="https://abarik.github.io/stat1_kurzus/" target="_blank">Példák próbák végrehajtására <i class="fas fa-external-link-alt"></i></a></li>
 <li><a href="https://abarik.github.io/aeer/" target="_blank">Adatkezelés és egyváltozós elemzések R-ben <i class="fas fa-external-link-alt"></i></a></li>
 <li><a href="https://abarik.github.io/basicr_2020_21_2/" target="_blank">Basic R <i class="fas fa-external-link-alt"></i></a></li>
